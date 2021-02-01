@@ -1,6 +1,4 @@
-<h1>新規投稿</h1>
-<%= render "form", button_value: "投稿" %>
-
+<%= form_with model: @post, local: true do |form| %>
   <div>
     <%= form.label :title, "タイトル" %>
     <%= form.text_field :title %>
@@ -10,6 +8,6 @@
     <%= form.text_field :content %>
   </div>
   <div>
-    <%= form.submit "送信" %>
+  <%= form.submit button_value %>
   </div>
 <% end %>
