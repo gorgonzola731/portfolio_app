@@ -1,13 +1,13 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[show edit update destroy]
+  before_action :authenticate_user!
+
 
   def index
     @posts = Post.order(id: :asc)
-
   end
 
   def show
-    
   end
 
   def new

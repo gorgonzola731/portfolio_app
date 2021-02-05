@@ -29,6 +29,9 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'rails-i18n', '~> 6.0.0'
+gem 'rails_best_practices'
+gem 'devise'
+gem 'devise-i18n'
 
 
 group :development, :test do
